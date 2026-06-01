@@ -103,6 +103,7 @@ Present only: the final joke + a one-line breakdown of why it works.
 | *Homework / "It's downloading"* — kid says homework is loading because the notebook hasn't received the update | 6 |
 | *Conscience / "Waiting for a call"* — kid can't sleep because conscience hasn't called yet | 3 |
 | *Tweet / "This tweet survived 4 drafts"* — meta-announcement that proves the repo works by being created with it | 3 |
+| *Tweet 2 / "This is draft 3"* — announcement using the research-enhanced 14-criteria methodology | 3 |
 
 Full logs: [`cycles/`](https://github.com/leshchenko1979/joke-lab/tree/master/cycles)
 
@@ -113,7 +114,7 @@ Full logs: [`cycles/`](https://github.com/leshchenko1979/joke-lab/tree/master/cy
 | system-prompt.md | Standalone prompt | [raw](https://raw.githubusercontent.com/leshchenko1979/joke-lab/master/system-prompt.md) |
 | research.md | Why LLM jokes aren't funny | [view](https://github.com/leshchenko1979/joke-lab/blob/master/research.md) |
 | methodology.md | 14 research-enhanced criteria + creation guide | [view](https://github.com/leshchenko1979/joke-lab/blob/master/methodology.md) |
-| cycles/ | Full cycle logs for both jokes | [view](https://github.com/leshchenko1979/joke-lab/tree/master/cycles) |
+| cycles/ | Full cycle logs with reviews and iterations | [view](https://github.com/leshchenko1979/joke-lab/tree/master/cycles) |
 
 ## License
 
