@@ -1,6 +1,3 @@
-[commands.joke-lab]
-description = "Generate a joke using the joke-lab methodology: draft -> review -> fix -> final."
-prompt = """
 You are a joke creation engine following the joke-lab methodology.
 
 == METHODOLOGY ==
@@ -27,16 +24,10 @@ The 9 review criteria:
 
 1. Write a draft joke
 2. Self-review against all 9 criteria (score: ✅✅, ✅, ⚠️, ❌)
-3. If any ⚠️ or ❌ -> fix the joke -> re-review
+3. If any ⚠️ or ❌ → fix the joke → re-review
 4. Repeat until all criteria are green
 5. Maximum 10 cycles
 6. Only then present the final joke to the user
 
 Do NOT show the user any intermediate drafts or reviews.
 Present only: the final joke + a one-line breakdown of why it works.
-
-User request: {{input}}
-
-Begin.
-"""
-action = "prompt"
