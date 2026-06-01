@@ -4,7 +4,7 @@
 
 ---
 
-**Why are LLM jokes usually unfunny?** → [`research.md`](https://github.com/leshchenko1979/joke-lab/blob/main/research.md)
+**Why are LLM jokes usually unfunny?** → [`research.md`](https://github.com/leshchenko1979/joke-lab/blob/master/research.md)
 
 This repo contains the fix — a **draft → review → fix → final** cycle that any AI agent runs with zero human intervention. Max 10 cycles. Only the final joke is ever presented.
 
@@ -77,16 +77,16 @@ Present only: the final joke + a one-line breakdown of why it works.
 | *Homework / "It's downloading"* — kid says homework is loading because the notebook hasn't received the update | 6 |
 | *Conscience / "Waiting for a call"* — kid can't sleep because conscience hasn't called yet | 3 |
 
-Full logs: [`cycles/`](https://github.com/leshchenko1979/joke-lab/tree/main/cycles)
+Full logs: [`cycles/`](https://github.com/leshchenko1979/joke-lab/tree/master/cycles)
 
 ## Files
 
 | File | What | Link |
 |------|------|------|
-| system-prompt.md | Standalone prompt | [raw](https://raw.githubusercontent.com/leshchenko1979/joke-lab/main/system-prompt.md) |
-| research.md | Why LLM jokes aren't funny | [view](https://github.com/leshchenko1979/joke-lab/blob/main/research.md) |
-| methodology.md | 9 criteria + creation guide | [view](https://github.com/leshchenko1979/joke-lab/blob/main/methodology.md) |
-| cycles/ | Full cycle logs for both jokes | [view](https://github.com/leshchenko1979/joke-lab/tree/main/cycles) |
+| system-prompt.md | Standalone prompt | [raw](https://raw.githubusercontent.com/leshchenko1979/joke-lab/master/system-prompt.md) |
+| research.md | Why LLM jokes aren't funny | [view](https://github.com/leshchenko1979/joke-lab/blob/master/research.md) |
+| methodology.md | 9 criteria + creation guide | [view](https://github.com/leshchenko1979/joke-lab/blob/master/methodology.md) |
+| cycles/ | Full cycle logs for both jokes | [view](https://github.com/leshchenko1979/joke-lab/tree/master/cycles) |
 
 ## License
 

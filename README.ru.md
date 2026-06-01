@@ -4,7 +4,7 @@
 
 ---
 
-**Почему LLM-шутки обычно несмешные?** → [`research.ru.md`](https://github.com/leshchenko1979/joke-lab/blob/main/research.ru.md)
+**Почему LLM-шутки обычно несмешные?** → [`research.ru.md`](https://github.com/leshchenko1979/joke-lab/blob/master/research.ru.md)
 
 В этой репе — решение: цикл **черновик → ревью → исправление → финал**,
 который любой ИИ-агент выполняет автоматически. Максимум 10 циклов.
@@ -79,16 +79,16 @@ Present only: the final joke + a one-line breakdown of why it works.
 | *Домашка / «загружается»* — ребёнок говорит, что домашка грузится, потому что тетрадь не получила обновление | 6 |
 | *Совесть / «важный звонок»* — ребёнок не может уснуть, потому что совесть ещё не позвонила | 3 |
 
-Полные логи: [`cycles/`](https://github.com/leshchenko1979/joke-lab/tree/main/cycles)
+Полные логи: [`cycles/`](https://github.com/leshchenko1979/joke-lab/tree/master/cycles)
 
 ## Файлы
 
 | Файл | Описание | Ссылка |
 |------|----------|--------|
-| system-prompt.md | Промпт отдельным файлом | [raw](https://raw.githubusercontent.com/leshchenko1979/joke-lab/main/system-prompt.md) |
-| research.md / research.ru.md | Почему LLM-шутки несмешные | [view](https://github.com/leshchenko1979/joke-lab/blob/main/research.ru.md) |
-| methodology.md / methodology.ru.md | 9 критериев + создание | [view](https://github.com/leshchenko1979/joke-lab/blob/main/methodology.ru.md) |
-| cycles/ | Полные логи циклов | [view](https://github.com/leshchenko1979/joke-lab/tree/main/cycles) |
+| system-prompt.md | Промпт отдельным файлом | [raw](https://raw.githubusercontent.com/leshchenko1979/joke-lab/master/system-prompt.md) |
+| research.md / research.ru.md | Почему LLM-шутки несмешные | [view](https://github.com/leshchenko1979/joke-lab/blob/master/research.ru.md) |
+| methodology.md / methodology.ru.md | 9 критериев + создание | [view](https://github.com/leshchenko1979/joke-lab/blob/master/methodology.ru.md) |
+| cycles/ | Полные логи циклов | [view](https://github.com/leshchenko1979/joke-lab/tree/master/cycles) |
 
 ## Лицензия
 
