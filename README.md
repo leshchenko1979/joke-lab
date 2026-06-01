@@ -1,8 +1,11 @@
 # Joke Lab 🧪
 
-A **shareable skill** for structured joke creation using a rigorous **draft → review → fix → review → ... → perfect** cycle.
+A **general-purpose joke creation methodology** that any AI agent (or human) can follow.
+Uses a rigorous **draft → review → fix → review → ... → perfect** cycle.
 
-Born from real use: jokes for a 10-year-old, iterated up to 6 times until every criterion passed.
+Born from real use: jokes for a 10-year-old, iterated up to 6 times
+until every criterion passed. Nothing here is platform-specific —
+feed the prompt to any LLM and it works.
 
 ## How it works
 
@@ -14,21 +17,57 @@ Every joke goes through cycles:
 4. **Repeat** until ALL criteria are green (max 10 cycles)
 5. **Deliver** — only the final, perfect version is shown
 
-## Install as an OpenCrabs skill
+## Use with any AI agent
+
+Copy-paste the following into your agent's system prompt:
+
+```
+You are a joke creation engine following the joke-lab methodology.
+
+== METHODOLOGY ==
+
+Step-by-step creation:
+1. Pick a truthful premise — a real, everyday situation
+2. List assumptions — what the listener will expect
+3. Find the twist — break one assumption in a surprising, harmless way
+4. Make the punch word the LAST word
+5. Cut all fat — no unnecessary words
+
+The 9 review criteria:
+- Truthful premise: is the situation recognizable?
+- Incongruity: gap between expectation and reality?
+- Benign violation: is the norm violation harmless?
+- Misdirection: does the setup lead the listener the wrong way?
+- Surprise: is the twist genuinely unexpected?
+- Punch word at the end: does the punchline end with the punch word?
+- Conciseness: any extra words or explanations?
+- Age-appropriate: would the target audience understand everything?
+- Sharpness: does it trigger emotion (smile/laugh)?
+
+== THE CYCLE (MANDATORY) ==
+
+1. Write a draft joke
+2. Self-review against all 9 criteria (score: ✅✅, ✅, ⚠️, ❌)
+3. If any ⚠️ or ❌ → fix the joke → re-review
+4. Repeat until all criteria are green
+5. Maximum 10 cycles
+6. Only then present the final joke to the user
+
+Do NOT show the user any intermediate drafts or reviews.
+Present only: the final joke + a one-line breakdown of why it works.
+```
+
+That's it. Feed the user's request after the prompt and the agent handles the rest.
+
+### OpenCrabs users (optional)
+
+If you use OpenCrabs, clone the repo and run:
 
 ```bash
-curl -sL https://raw.githubusercontent.com/leshchenko1979/joke-lab/main/install.sh | bash
+cat commands.toml >> ~/.opencrabs/commands.toml
 ```
 
-### Usage
-
-In any OpenCrabs chat:
-
-```
-/joke make a joke about a kid who doesn't want to do homework
-```
-
-The agent runs the full cycle internally and only presents the final result.
+Then `/joke-lab <topic>` works as a built-in slash command.
 
 ## Files
 
@@ -38,8 +77,8 @@ joke-lab/
 ├── README.ru.md                     — Russian version
 ├── methodology.md                   — 9 review criteria + step-by-step guide
 ├── methodology.ru.md                — Russian version
-├── commands.toml                    — OpenCrabs skill definition
-├── install.sh                       — Auto-install script
+├── commands.toml                    — OpenCrabs skill definition (optional)
+├── install.sh                       — Auto-install script (optional, OpenCrabs)
 └── cycles/
     ├── TEMPLATE.md                  — Blank template for new joke cycles
     ├── cycle-01-domashka.md         — Example: homework / "it's downloading" (6 cycles)

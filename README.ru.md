@@ -1,11 +1,11 @@
 # Joke Lab 🧪
 
-**Шеримый скилл** для создания анекдотов через строгий цикл
-**черновик → ревью → исправление → ревью → ... → идеал**.
+**Универсальная методология создания анекдотов**, которой может следовать любой ИИ-агент (или человек).
+Использует строгий цикл **черновик → ревью → исправление → ревью → ... → идеал**.
 
-Рождён из реального использования: анекдоты для 10-летней Саши,
-дочери пользователя. Каждый проходил до 6 итераций, пока все критерии
-не становились зелёными.
+Рождена из реального использования: анекдоты для 10-летней Саши,
+каждый проходил до 6 итераций, пока все критерии не становились зелёными.
+Ничего платформенно-специфичного — скормите промпт любой LLM, и заработает.
 
 ## Как работает
 
@@ -17,31 +17,57 @@
 4. **Повтор** пока все критерии не зелёные (максимум 10 циклов)
 5. **Выдача** — только финальная, идеальная версия
 
-## Установка как скилла OpenCrabs
+## Использование с любым ИИ-агентом
 
-### Способ 1: одной строкой
+Скопируйте следующий промпт в system prompt вашего агента:
+
+```
+You are a joke creation engine following the joke-lab methodology.
+
+== METHODOLOGY ==
+
+Step-by-step creation:
+1. Pick a truthful premise — a real, everyday situation
+2. List assumptions — what the listener will expect
+3. Find the twist — break one assumption in a surprising, harmless way
+4. Make the punch word the LAST word
+5. Cut all fat — no unnecessary words
+
+The 9 review criteria:
+- Truthful premise: is the situation recognizable?
+- Incongruity: gap between expectation and reality?
+- Benign violation: is the norm violation harmless?
+- Misdirection: does the setup lead the listener the wrong way?
+- Surprise: is the twist genuinely unexpected?
+- Punch word at the end: does the punchline end with the punch word?
+- Conciseness: any extra words or explanations?
+- Age-appropriate: would the target audience understand everything?
+- Sharpness: does it trigger emotion (smile/laugh)?
+
+== THE CYCLE (MANDATORY) ==
+
+1. Write a draft joke
+2. Self-review against all 9 criteria (score: ✅✅, ✅, ⚠️, ❌)
+3. If any ⚠️ or ❌ → fix the joke → re-review
+4. Repeat until all criteria are green
+5. Maximum 10 cycles
+6. Only then present the final joke to the user
+
+Do NOT show the user any intermediate drafts or reviews.
+Present only: the final joke + a one-line breakdown of why it works.
+```
+
+Готово. После промпта передайте запрос пользователя — агент сам всё сделает.
+
+### Для пользователей OpenCrabs (опционально)
+
+Если вы используете OpenCrabs — склонируйте репу и выполните:
 
 ```bash
-curl -sL https://raw.githubusercontent.com/leshchenko1979/joke-lab/main/install.sh | bash
+cat commands.toml >> ~/.opencrabs/commands.toml
 ```
 
-### Способ 2: вручную
-
-```bash
-git clone https://github.com/leshchenko1979/joke-lab ~/joke-lab
-cat ~/joke-lab/commands.toml >> ~/.opencrabs/commands.toml
-# Затем запустить /doctor в OpenCrabs или начать новую сессию
-```
-
-### Использование
-
-В любом чате OpenCrabs:
-
-```
-/joke-lab придумай анекдот про кота, который не хочет просыпаться
-```
-
-Агент сам прогонит циклы и выдаст только финальный результат.
+После этого `/joke-lab <тема>` работает как встроенная слеш-команда.
 
 ## Файлы
 
@@ -51,8 +77,8 @@ joke-lab/
 ├── README.ru.md                     — Этот файл
 ├── methodology.md                   — 9 критериев + пошаговая схема (англ.)
 ├── methodology.ru.md                — То же на русском
-├── commands.toml                    — Определение скилла для OpenCrabs
-├── install.sh                       — Скрипт автоматической установки
+├── commands.toml                    — Скилл для OpenCrabs (опционально)
+├── install.sh                       — Скрипт установки (опционально, OpenCrabs)
 └── cycles/
     ├── TEMPLATE.md                  — Шаблон для новых анекдотов
     ├── cycle-01-domashka.md         — Пример: домашка / «загружается» (6 циклов)
@@ -80,8 +106,8 @@ joke-lab/
 | 4 | **Мисдирекшн** | Уводит слушателя в ложную сторону? |
 | 5 | **Сюрприз** | Поворот действительно неожиданный? |
 | 6 | **Ударное слово в конце** | Последнее слово — это punch? |
-| 7 | **Лаконичность** | Нет лишних слов/объяснений? |
-| 8 | **Понятность возраста** | Доступно целевой аудитории? |
+| 7 | **Лаконичность** | Нет лишних слов или объяснений? |
+| 8 | **Понятность возрасту** | Доступно целевой аудитории? |
 | 9 | **Острота** | Вызывает эмоцию (улыбку/смех)? |
 
 Оценки: ✅✅ отлично, ✅ хорошо, ⚠️ надо доработать, ❌ проблема.
@@ -90,12 +116,12 @@ joke-lab/
 
 ## Создать свой анекдот
 
-1. Скопируй `cycles/TEMPLATE.md` в `cycles/tvoja-tema.md`
-2. Напиши черновик на основе правдивой ситуации
-3. Оцени себя по 9 критериям
-4. Если есть ⚠️ или ❌ — перепиши и оцени снова
-5. Максимум 10 циклов. Не проходит — меняй premise.
+1. Скопируйте `cycles/TEMPLATE.md` в `cycles/tvoja-tema.md`
+2. Напишите черновик на основе правдивой ситуации
+3. Оцените по 9 критериям
+4. Если есть ⚠️ или ❌ — перепишите и оцените снова
+5. Максимум 10 циклов. Не проходит — меняйте premise.
 
 ## Лицензия
 
-MIT — используй, форкай, делись.
+MIT — используйте, форкайте, делитесь.
