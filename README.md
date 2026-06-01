@@ -2,18 +2,25 @@
 
 [🇷🇺 Русский](README.ru.md)
 
-Make any AI agent generate genuinely funny jokes using a rigorous
-**draft → review → fix → final** cycle — fully automated.
+---
 
-## How it works
+**Why are LLM jokes usually unfunny?** → [`research.md`](https://github.com/leshchenko1979/joke-lab/blob/main/research.md)
 
-The agent writes a draft, self-reviews against 9 criteria (incongruity,
-misdirection, punch-word position, etc.), fixes any issues, and repeats
-until every criterion passes. Max 10 cycles. Only the final joke is shown.
+This repo contains the fix — a **draft → review → fix → final** cycle that any AI agent runs with zero human intervention. Max 10 cycles. Only the final joke is ever presented.
 
-## System prompt
+---
 
-Paste this into your agent's system instructions (see setup guides below).
+## Setup
+
+**Primary:** Give your agent this URL and ask it to build a joke skill from this repo:
+
+```
+https://github.com/leshchenko1979/joke-lab
+```
+
+The agent reads the methodology, examples, and research — then applies the cycle automatically.
+
+**Fallback:** Paste the system prompt below into your agent's instructions.
 
 ```
 You are a joke creation engine following the joke-lab methodology.
@@ -51,128 +58,35 @@ Do NOT show the user any intermediate drafts or reviews.
 Present only: the final joke + a one-line breakdown of why it works.
 ```
 
-## Setup guides by platform
+### Platform tips
 
-### Claude (claude.ai)
+| Platform | How to load the skill |
+|----------|-----------------------|
+| **Claude** | [claude.ai/projects](https://claude.ai/projects) → New Project → paste repo URL as Knowledge, or prompt as Instructions |
+| **ChatGPT** | Settings → Personalization → Custom Instructions → paste prompt |
+| **Gemini** | [aistudio.google.com](https://aistudio.google.com) → New project → System instructions |
+| **OpenCrabs** | `~/.opencrabs/commands.toml` → `[commands.joke-lab] prompt = "..."` |
+| **API** | Pass as `system` / `system_instruction` parameter |
 
-**Recommended:** Claude Projects (Pro required)
-
-1. Go to [claude.ai/projects](https://claude.ai/projects) → **New Project**
-2. Name it (e.g. "Joke Lab")
-3. Open **Project settings** → paste the system prompt into **Project instructions**
-4. Click **Save** — every conversation in this project now follows the cycle
-
-**Alternative — API:**
-
-```json
-{
-  "model": "claude-sonnet-4-20250514",
-  "system": "<paste system prompt above>",
-  "messages": [{"role": "user", "content": "create a joke about cats"}]
-}
-```
-
-### ChatGPT (chatgpt.com)
-
-**Recommended (free):** Custom Instructions
-
-1. Click your profile → **Settings** → **Personalization** → **Custom Instructions**
-2. Paste the system prompt into **"How would you like ChatGPT to respond?"**
-3. Click **Save** — applies to all new conversations
-
-**Alternative (Plus):** GPT Builder
-
-1. Click **Explore GPTs** → **Create** → **Configure** tab
-2. Paste into **Instructions** field → **Save** — reusable as a dedicated GPT
-
-### Gemini (gemini.google.com)
-
-**Recommended:** Google AI Studio ([aistudio.google.com](https://aistudio.google.com))
-
-1. Click **New project** → paste the system prompt into **System instructions** (left panel)
-2. Send your first message — the instruction applies for the whole project
-
-**Alternative (Advanced):** Gems
-
-1. Open [gemini.google.com](https://gemini.google.com) → **Gems** → **Create Gem**
-2. Paste the system prompt as instructions → name it → **Save**
-
-### API (developer)
-
-**OpenAI / ChatGPT API:**
-
-```python
-response = client.chat.completions.create(
-    model="gpt-4o",
-    messages=[
-        {"role": "system", "content": "<paste system prompt above>"},
-        {"role": "user", "content": "create a joke about programmers"}
-    ]
-)
-```
-
-**Anthropic / Claude API:**
-
-```python
-response = client.messages.create(
-    model="claude-sonnet-4-20250514",
-    system="<paste system prompt above>",
-    messages=[{"role": "user", "content": "create a joke about cats"}]
-)
-```
-
-**Google / Gemini API:**
-
-```python
-model = genai.GenerativeModel(
-    model_name="gemini-2.5-flash",
-    system_instruction="<paste system prompt above>"
-)
-response = model.generate_content("create a joke about dogs")
-```
-
-### Perplexity, Grok, Copilot, DeepSeek, etc.
-
-Most LLM chat apps offer a **custom instructions** or **persona** settings page.
-Look for a field labelled:
-- "System prompt"
-- "Custom instructions"
-- "Persona"
-- "How should I respond?"
-
-Paste the system prompt there. See each platform's docs for exact location.
-
-### OpenCrabs
-
-Add to `~/.opencrabs/commands.toml`:
-
-```toml
-[commands.joke-lab]
-description = "Generate a joke using joke-lab methodology"
-prompt = "<paste system prompt above>"
-action = "prompt"
-```
-
-Then use `/joke-lab` in any OpenCrabs chat.
+---
 
 ## Example results
 
 | Joke | Cycles |
 |------|--------|
-| *Homework / "It's downloading"* — kid claims homework is loading because the notebook hasn't received the update | 6 |
+| *Homework / "It's downloading"* — kid says homework is loading because the notebook hasn't received the update | 6 |
 | *Conscience / "Waiting for a call"* — kid can't sleep because conscience hasn't called yet | 3 |
 
-Full cycle logs: see `cycles/`
+Full logs: [`cycles/`](https://github.com/leshchenko1979/joke-lab/tree/main/cycles)
 
 ## Files
 
-| File | What |
-|------|------|
-| `README.md` / `README.ru.md` | This guide (EN + RU) |
-| `research.md` / `research.ru.md` | Why LLM jokes aren't funny (academic sources) |
-| `methodology.md` | 9 criteria + step-by-step creation guide |
-| `cycles/` | Full cycle logs for both example jokes |
-| `system-prompt.md` | Standalone prompt file (same as block above) |
+| File | What | Link |
+|------|------|------|
+| system-prompt.md | Standalone prompt | [raw](https://raw.githubusercontent.com/leshchenko1979/joke-lab/main/system-prompt.md) |
+| research.md | Why LLM jokes aren't funny | [view](https://github.com/leshchenko1979/joke-lab/blob/main/research.md) |
+| methodology.md | 9 criteria + creation guide | [view](https://github.com/leshchenko1979/joke-lab/blob/main/methodology.md) |
+| cycles/ | Full cycle logs for both jokes | [view](https://github.com/leshchenko1979/joke-lab/tree/main/cycles) |
 
 ## License
 
