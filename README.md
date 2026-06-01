@@ -75,12 +75,10 @@ Then `/joke-lab <topic>` works as a built-in slash command.
 joke-lab/
 ├── README.md                        — This file
 ├── README.ru.md                     — Russian version
+├── research.md                      — Why LLM jokes aren't funny (research summary)
 ├── methodology.md                   — 9 review criteria + step-by-step guide
 ├── methodology.ru.md                — Russian version
-├── commands.toml                    — OpenCrabs skill definition (optional)
-├── install.sh                       — Auto-install script (optional, OpenCrabs)
 └── cycles/
-    ├── TEMPLATE.md                  — Blank template for new joke cycles
     ├── cycle-01-domashka.md         — Example: homework / "it's downloading" (6 cycles)
     ├── cycle-01-domashka.ru.md      — Russian version
     ├── cycle-02-sovest.md           — Example: conscience / "important call" (3 cycles)
@@ -113,14 +111,6 @@ The 9 review criteria:
 Scoring: ✅✅ excellent, ✅ good, ⚠️ needs work, ❌ problem.
 
 **Pass:** no ⚠️ or ❌. All criteria green.
-
-## Creating your own jokes
-
-1. Copy `cycles/TEMPLATE.md` to `cycles/your-topic.md`
-2. Write a draft based on a truthful premise
-3. Score yourself against the 9 criteria
-4. If any ⚠️ or ❌ → rewrite and score again
-5. Max 10 cycles. If it doesn't pass — change the premise.
 
 ## License
 
