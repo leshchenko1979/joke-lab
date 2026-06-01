@@ -59,16 +59,6 @@ Present only: the final joke + a one-line breakdown of why it works.
 
 Готово. После промпта передайте запрос пользователя — агент сам всё сделает.
 
-### Для пользователей OpenCrabs (опционально)
-
-Если вы используете OpenCrabs — склонируйте репу и выполните:
-
-```bash
-cat commands.toml >> ~/.opencrabs/commands.toml
-```
-
-После этого `/joke-lab <тема>` работает как встроенная слеш-команда.
-
 ## Файлы
 
 ```
@@ -76,6 +66,7 @@ joke-lab/
 ├── README.md                        — Английская версия (основная)
 ├── README.ru.md                     — Этот файл
 ├── research.md                      — Почему LLM-шутки несмешные (англ.)
+├── research.ru.md                   — То же на русском
 ├── methodology.md                   — 9 критериев + пошаговая схема (англ.)
 ├── methodology.ru.md                — То же на русском
 └── cycles/

@@ -59,16 +59,6 @@ Present only: the final joke + a one-line breakdown of why it works.
 
 That's it. Feed the user's request after the prompt and the agent handles the rest.
 
-### OpenCrabs users (optional)
-
-If you use OpenCrabs, clone the repo and run:
-
-```bash
-cat commands.toml >> ~/.opencrabs/commands.toml
-```
-
-Then `/joke-lab <topic>` works as a built-in slash command.
-
 ## Files
 
 ```
