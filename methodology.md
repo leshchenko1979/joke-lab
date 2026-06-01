@@ -1,46 +1,45 @@
-# Методология создания анекдота
+# Joke Creation Methodology
 
-Источник: Toastmasters International, Humor Blueprint, теория юмора.
+Sources: Toastmasters International, Humor Blueprint, humor theory.
 
-## Пошаговая схема
+## Step-by-step process
 
-1. **Выбрать правдивую ситуацию** (предпосылку)
-   — что-то реальное, узнаваемое, не натужное
-2. **Выписать стереотипные ожидания**
-   — что подумает слушатель после сетапа
-3. **Найти одно ожидание и сломать его**
-   — неожиданный поворот
-4. **Построить мисдирекшн**
-   — увести внимание слушателя в ложную сторону
-5. **Ударное слово — в самый конец**
-   — последнее слово переворачивает смысл
-6. **Вырезать всё лишнее**
-   — ни одного слова, которое не работает на punchline
+1. **Pick a truthful premise**
+   — something real, recognizable, not forced
+2. **List stereotypical expectations**
+   — what the listener will assume after the setup
+3. **Break one expectation**
+   — an unexpected twist
+4. **Build misdirection**
+   — lead the listener toward a false conclusion
+5. **Punch word at the very end**
+   — the last word recontextualizes everything
+6. **Cut everything unnecessary**
+   — not a single word that doesn't serve the punchline
 
-## Критерии ревью (9 пунктов)
+## Review criteria (9 items)
 
-| # | Критерий | Что проверяем |
-|---|----------|---------------|
-| 1 | **Правдивая ситуация** | Узнаваема ли предпосылка? Не надумана ли? |
-| 2 | **Инконгруэнтность** | Есть ли разрыв между ожиданием и реальностью? |
-| 3 | **Benign Violation** | Нарушение нормы безобидно? Никому не больно? |
-| 4 | **Мисдирекшн** | Уводит ли сетап внимание в ложную сторону? |
-| 5 | **Сюрприз** | Поворот действительно неожиданный? |
-| 6 | **Ударное слово в конце** | Punchline заканчивается ударным словом? |
-| 7 | **Лаконичность** | Нет ли лишних слов, реплик, пояснений? |
-| 8 | **Понятность для возраста** | Поймёт ли 10-летний ребёнок все слова и связки? |
-| 9 | **Острота** | Вызывает ли эмоцию (улыбку/смех)? |
+| # | Criterion | What we check |
+|---|-----------|---------------|
+| 1 | **Truthful premise** | Is the situation recognizable? Is it forced? |
+| 2 | **Incongruity** | Is there a gap between expectation and reality? |
+| 3 | **Benign violation** | Is the norm violation harmless? Nobody gets hurt? |
+| 4 | **Misdirection** | Does the setup lead the listener the wrong way? |
+| 5 | **Surprise** | Is the twist genuinely unexpected? |
+| 6 | **Punch word at the end** | Does the punchline end with the punch word? |
+| 7 | **Conciseness** | Any extra words, lines, explanations? |
+| 8 | **Age-appropriate** | Would a 10-year-old understand every word? |
+| 9 | **Sharpness** | Does it trigger an emotion (smile/laugh)? |
 
-## Оценка
+## Scoring
 
-- ✅✅ — отлично
-- ✅ — хорошо
-- ⚠️ — есть куда улучшать
-- ❌ — проблема, нужно исправлять
+- ✅✅ — excellent
+- ✅ — good
+- ⚠️ — could be improved
+- ❌ — problem, needs fixing
 
-**Вердикт «ПРОХОДИТ»**: ни одного ⚠️ или ❌. Все критерии зелёные.
+**Verdict "PASS":** no ⚠️ or ❌. All criteria green.
 
-## Максимум циклов
+## Max cycles
 
-10. Если за 10 циклов анекдот не прошёл — предпосылка бракованная,
-нужно менять сетап целиком.
+10. If a joke doesn't pass in 10 cycles — the premise is broken, change the setup entirely.

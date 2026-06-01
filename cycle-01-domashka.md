@@ -1,161 +1,161 @@
-# Цикл 1: Домашнее задание / «Загружается»
+# Cycle 1: Homework / "It's downloading"
 
-**Пользователь:** Алексей (Telegram)
-**Цель:** анекдот про Сашу (10 лет)
-**Тема:** школа, домашнее задание, IT-метафора
+**User:** Alexey (Telegram)
+**Goal:** a joke about Sasha (age 10)
+**Topic:** school, homework, IT metaphor
 
 ---
 
-## Цикл 1 — Черновик
+## Cycle 1 — Draft
 
-Учительница:
-— Саша, где домашнее задание?
-— Я его сделала. В голове.
+Teacher:
+— Sasha, where's your homework?
+— I did it. In my head.
 — ?!
-— А записать забыла. В голове же автозаполнения нет — само в тетрадь не перепрыгивает!
+— Just forgot to write it down. There's no autocomplete in my brain — it won't jump into the notebook by itself!
 
-### Ревью Цикла 1
+### Review — Cycle 1
 
-| Критерий | Оценка | Комментарий |
-|----------|--------|-------------|
-| Правдивая ситуация | ✅ | Нет домашки — классика |
-| Инконгруэнтность | ✅ | Ожидание: не сделала / забыла → Сделала, но в голове |
-| Benign Violation | ✅ | Не сделала домашки — ну, бывает |
-| Мисдирекшн | ⚠️ | Средний. «Сделала» — ожидание: в тетради |
-| Сюрприз | ⚠️ | «В голове» — неожиданно, но не взрыв |
-| Ударное слово в конце | ⚠️ | «Перепрыгивает» — слабый удар |
-| Лаконичность | ✅ | Компактно |
-| Понятность для 10 лет | ✅ | Знакомо |
-| Острота | ⚠️ | Улыбка, но punchline не бьёт |
+| Criterion | Score | Comment |
+|-----------|-------|---------|
+| Truthful premise | ✅ | No homework — classic |
+| Incongruity | ✅ | Expectation: didn't do it / forgot → Did it, but in my head |
+| Benign violation | ✅ | Didn't do homework — no big deal |
+| Misdirection | ⚠️ | Okay-ish. "I did it" → expectation: in the notebook |
+| Surprise | ⚠️ | "In my head" — unexpected but not explosive |
+| Punch word at the end | ⚠️ | "Jump" — weak punch |
+| Conciseness | ✅ | Compact |
+| Age-appropriate | ✅ | Familiar |
+| Sharpness | ⚠️ | A smile, but the punchline doesn't land |
 
-**Вердикт: ⚠️ Есть проблемы.** Нужно усилить мисдирекшн, сюрприз и punchline.
-
----
-
-## Цикл 2 — Исправление (смена подхода)
-
-Учительница:
-— Саша, я не вижу домашнего задания.
-— А оно загружается. Связь плохая.
-— Какая связь?!
-— Между головой и тетрадью. Тетрадь ещё не получила обновление.
-
-### Ревью Цикла 2
-
-| Критерий | Оценка | Комментарий |
-|----------|--------|-------------|
-| Правдивая ситуация | ✅ | Всё ещё школа/домашка |
-| Инконгруэнтность | ✅ | «Загружается» → ожидание: интернет |
-| Benign Violation | ✅ | Отмазка, безобидно |
-| Мисдирекшн | ✅ | «Загружается, связь плохая» — 100% про интернет |
-| Сюрприз | ✅ | Twist про голову и тетрадь — неожидан |
-| Ударное слово в конце | ⚠️ | «Обновление» — хорошо, но «тетрадь ещё не получила» — 3 слова до удара |
-| Лаконичность | ✅ | 4 реплики |
-| Понятность для 10 лет | ✅ | «Обновление» — бытовой термин |
-| Острота | ✅ | Есть улыбка |
-
-**Вердикт: ⚠️ Ударное слово не в самом конце.** Предпоследнее слово — «получила», последнее — «обновление». Punch размазан.
+**Verdict: ⚠️ Issues found.** Need stronger misdirection, surprise, and punchline.
 
 ---
 
-## Цикл 3 — Исправление (усиление punch)
+## Cycle 2 — Fix (new approach)
 
-Учительница:
-— Саша, где домашнее задание?
-— Загружается.
-— Откуда?!
-— Из головы. Тетрадь не поддерживает формат.
+Teacher:
+— Sasha, I don't see your homework.
+— It's downloading. Bad connection.
+— What connection?!
+— Between my brain and the notebook. The notebook hasn't received the update yet.
 
-### Ревью Цикла 3
+### Review — Cycle 2
 
-| Критерий | Оценка | Комментарий |
-|----------|--------|-------------|
-| Правдивая ситуация | ✅ | Ок |
-| Инконгруэнтность | ✅ | Ок |
-| Benign Violation | ✅ | Ок |
-| Мисдирекшн | ✅ | Ок |
-| Сюрприз | ⚠️ | Угасает — «не поддерживает формат» стандартно |
-| Ударное слово в конце | ✅ | «Формат» — punch в конце |
-| Лаконичность | ✅ | Стало короче |
-| Понятность для 10 лет | ⚠️ | «Формат» (в смысле file format) — для 10 лет может быть неочевидно |
-| Острота | ⚠️ | Плоский Punch |
+| Criterion | Score | Comment |
+|-----------|-------|---------|
+| Truthful premise | ✅ | Still school/homework |
+| Incongruity | ✅ | "Downloading" → expectation: internet |
+| Benign violation | ✅ | Excuse, harmless |
+| Misdirection | ✅ | "Downloading, bad connection" — 100% sounds like internet |
+| Surprise | ✅ | Twist about brain & notebook — unexpected |
+| Punch word at the end | ⚠️ | "Update" is good, but "notebook hasn't received" is 3 words before it |
+| Conciseness | ✅ | 4 lines |
+| Age-appropriate | ✅ | "Update" is an everyday term |
+| Sharpness | ✅ | A smile |
 
-**Вердикт: ⚠️ Сюрприз угас, punch плоский.** Теряет остроту.
-
----
-
-## Цикл 4 — Смена угла
-
-Учительница:
-— Саша, где домашнее задание?
-— Загружается. Связь плохая.
-— Какая связь?!
-— Между головой и тетрадью. Тетрадь устарела.
-
-### Ревью Цикла 4
-
-| Критерий | Оценка | Комментарий |
-|----------|--------|-------------|
-| Правдивая ситуация | ✅ | Ок |
-| Инконгруэнтность | ✅ | Ок |
-| Benign Violation | ✅ | Ок |
-| Мисдирекшн | ✅ | Ок |
-| Сюрприз | ✅ | «Устарела» — не ждали |
-| Ударное слово в конце | ✅ | «Устарела» — punch в конце |
-| Лаконичность | ✅ | Ок |
-| Понятность для 10 лет | ✅ | «Устарела» — просто |
-| Острота | ⚠️ | Смешно, но не отвал |
-
-**Вердикт: ⚠️ Острота средняя.** Можно сильнее.
+**Verdict: ⚠️ Punch word not at the very end.** The word "update" is good but there are filler words before it.
 
 ---
 
-## Цикл 5 — Windows 95 референс
+## Cycle 3 — Fix (stronger punch)
 
-Учительница:
-— Саша, где домашнее задание?
-— Загружается.
-— Откуда?!
-— Из головы. Тетрадь на Windows 95 — не поддерживает.
+Teacher:
+— Sasha, where's your homework?
+— It's downloading.
+— From where?!
+— From my brain. The notebook doesn't support the format.
 
-### Ревью Цикла 5
+### Review — Cycle 3
 
-| Критерий | Оценка | Комментарий |
-|----------|--------|-------------|
-| Правдивая ситуация | ✅ | Ок |
-| Инконгруэнтность | ✅ | Ок |
-| Benign Violation | ✅ | Ок |
-| Мисдирекшн | ✅ | Ок |
-| Сюрприз | ✅ | Windows 95 — неожидан |
-| Ударное слово в конце | ✅ | «Не поддерживает» — punch |
-| Лаконичность | ✅ | Ок |
-| Понятность для 10 лет | ❌ | **Windows 95 — ребёнок не знает** |
-| Острота | ⚠️ | Для взрослого смешно, для ребёнка — нет |
+| Criterion | Score | Comment |
+|-----------|-------|---------|
+| Truthful premise | ✅ | OK |
+| Incongruity | ✅ | OK |
+| Benign violation | ✅ | OK |
+| Misdirection | ✅ | OK |
+| Surprise | ⚠️ | Fading — "doesn't support the format" is predictable |
+| Punch word at the end | ✅ | "Format" — punch at the end |
+| Conciseness | ✅ | Shorter |
+| Age-appropriate | ⚠️ | "Format" (as file format) — maybe unclear for a 10-year-old |
+| Sharpness | ⚠️ | Flat punch |
 
-**Вердикт: ❌ Мимо целевой аудитории.** Windows 95 — референс для папы, не для Саши.
+**Verdict: ⚠️ Surprise faded, punch flat.** Losing edge.
 
 ---
 
-## Цикл 6 — Финальная версия
+## Cycle 4 — Angle change
 
-Учительница:
-— Саша, где домашнее задание?
-— Загружается. Связь плохая.
-— С кем?!
-— Между головой и тетрадью. Тетрадь не поддерживает этот формат.
+Teacher:
+— Sasha, where's your homework?
+— It's downloading. Bad connection.
+— What connection?!
+— Between my brain and the notebook. The notebook is outdated.
 
-### Ревью Цикла 6
+### Review — Cycle 4
 
-| Критерий | Оценка | Комментарий |
-|----------|--------|-------------|
-| Правдивая ситуация | ✅✅ | Школа, проверка домашки — 100% узнаваемо |
-| Инконгруэнтность | ✅✅ | «Загружается» в контексте тетради — разрыв ожидания |
-| Benign Violation | ✅✅ | Отмазка про загрузку — безобидно |
-| Мисдирекшн | ✅✅ | «Связь плохая» → 100% интернет/Wi-Fi |
-| Сюрприз | ✅✅ | «С кем?!» → учительница думает про человека → twist: с тетрадью |
-| Ударное слово в конце | ✅✅ | «Формат» — последнее слово, ставит точку |
-| Лаконичность | ✅✅ | 4 реплики, ни одного лишнего слова |
-| Понятность для 10 лет | ✅✅ | «Загружается», «связь», «формат» — IT-быт |
-| Острота | ✅✅ | Двойная инконгруэнтность: загрузка + формат → парадокс |
+| Criterion | Score | Comment |
+|-----------|-------|---------|
+| Truthful premise | ✅ | OK |
+| Incongruity | ✅ | OK |
+| Benign violation | ✅ | OK |
+| Misdirection | ✅ | OK |
+| Surprise | ✅ | "Outdated" — unexpected |
+| Punch word at the end | ✅ | "Outdated" — punch at the end |
+| Conciseness | ✅ | OK |
+| Age-appropriate | ✅ | "Outdated" — simple |
+| Sharpness | ⚠️ | Funny but not hilarious |
 
-**Вердикт: ПРОХОДИТ. ✅ Все критерии зелёные. Ни одного предупреждения.**
+**Verdict: ⚠️ Medium sharpness.** Could be stronger.
+
+---
+
+## Cycle 5 — Windows 95 reference
+
+Teacher:
+— Sasha, where's your homework?
+— It's downloading.
+— From where?!
+— From my brain. The notebook's running Windows 95 — not compatible.
+
+### Review — Cycle 5
+
+| Criterion | Score | Comment |
+|-----------|-------|---------|
+| Truthful premise | ✅ | OK |
+| Incongruity | ✅ | OK |
+| Benign violation | ✅ | OK |
+| Misdirection | ✅ | OK |
+| Surprise | ✅ | Windows 95 — unexpected |
+| Punch word at the end | ✅ | "Not compatible" — punch |
+| Conciseness | ✅ | OK |
+| Age-appropriate | ❌ | **Windows 95 — a 10-year-old won't get it** |
+| Sharpness | ⚠️ | Funny for adults, not for a kid |
+
+**Verdict: ❌ Misses the target audience.** Windows 95 is a reference for dad, not for Sasha.
+
+---
+
+## Cycle 6 — Final version
+
+Teacher:
+— Sasha, where's your homework?
+— It's downloading. Bad connection.
+— With who?!
+— Between my brain and the notebook. The notebook doesn't support this format.
+
+### Review — Cycle 6
+
+| Criterion | Score | Comment |
+|-----------|-------|---------|
+| Truthful premise | ✅✅ | School, homework check — 100% relatable |
+| Incongruity | ✅✅ | "Downloading" in notebook context — expectation gap |
+| Benign violation | ✅✅ | Download excuse — harmless |
+| Misdirection | ✅✅ | "Bad connection" → 100% internet/Wi-Fi |
+| Surprise | ✅✅ | "With who?!" → teacher thinks it's a person → twist: the notebook |
+| Punch word at the end | ✅✅ | **"Format"** — last word, lands the point |
+| Conciseness | ✅✅ | 4 lines, not a single extra word |
+| Age-appropriate | ✅✅ | "Downloading", "connection", "format" — IT household vocab |
+| Sharpness | ✅✅ | Double incongruity: downloading + format → paradox |
+
+**Verdict: PASS. ✅ All criteria green. No warnings.**
