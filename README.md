@@ -76,6 +76,7 @@ Present only: the final joke + a one-line breakdown of why it works.
 |------|--------|
 | *Homework / "It's downloading"* — kid says homework is loading because the notebook hasn't received the update | 6 |
 | *Conscience / "Waiting for a call"* — kid can't sleep because conscience hasn't called yet | 3 |
+| *Tweet / "This tweet survived 4 drafts"* — meta-announcement that proves the repo works by being created with it | 3 |
 
 Full logs: [`cycles/`](https://github.com/leshchenko1979/joke-lab/tree/master/cycles)
 
