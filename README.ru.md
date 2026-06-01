@@ -1,4 +1,4 @@
-# Joke Lab 🧪
+# Joke Lab 🤡🧪
 
 [🇬🇧 English](README.md)
 
