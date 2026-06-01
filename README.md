@@ -16,18 +16,8 @@ Every joke goes through cycles:
 
 ## Install as an OpenCrabs skill
 
-### Method 1: One-liner
-
 ```bash
 curl -sL https://raw.githubusercontent.com/leshchenko1979/joke-lab/main/install.sh | bash
-```
-
-### Method 2: Manual
-
-```bash
-git clone https://github.com/leshchenko1979/joke-lab ~/joke-lab
-cat ~/joke-lab/commands.toml >> ~/.opencrabs/commands.toml
-# Then run /doctor in OpenCrabs or start a new session
 ```
 
 ### Usage
