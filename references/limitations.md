@@ -15,9 +15,15 @@ declares it passes. This is a closed loop. The methodology's own research
 explanations for why something is funny — even when it isn't. The review
 process is susceptible to the exact failure mode the research describes.
 
-The methodology mitigates this by treating reviews as iteration guides
-(see "Scoring caveat" in [`methodology.md`](methodology.md)), but the
-fundamental limitation remains: the grade is produced by the student.
+The methodology mitigates this in two ways:
+
+1. **Treat reviews as iteration guides** (see "Scoring caveat" in
+   [`methodology.md`](methodology.md)) rather than objective verdicts.
+2. **Split Author and Reviewer roles across different models** (see Model
+   separation in [`SKILL.md`](../SKILL.md)). An independent Reviewer model
+   — more critical, less aligned — catches blind spots the Author can't see.
+   The Qwen 3.7 / DeepSeek V4 pairing proved this approach when the
+   Reviewer identified 12 issues the original methodology had missed.
 
 **What this means in practice:** A "PASS" verdict means the LLM thinks its
 output satisfies its own criteria. It does not mean a human would find it
@@ -170,7 +176,7 @@ training data, and system prompt format.
 
 | Limitation | Severity | Mitigation |
 |-----------|----------|------------|
-| Self-assessment ceiling | High | Treat scores as direction signals, not verdicts. |
+| Self-assessment ceiling | High | Split Author/Reviewer across different models. Fallback: treat scores as direction signals. |
 | No lived experience | **Fundamental** | Cannot fix — inherent to LLM. |
 | No social context | **Fundamental** | Cannot fix — text-only system. |
 | Safety alignment interference | High | Use uncensored models; treat edge self-scores with suspicion. |

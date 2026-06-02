@@ -7,6 +7,25 @@ description: Multi-cycle quality refinement for AI-generated content. Detects an
 
 Push outputs past safe-average defaults through structured self-review and iteration.
 
+## Model separation (recommended when available)
+
+If you can launch sub-agents with different models — split the roles:
+
+- **Author model** — writes the draft using the creation process below.
+- **Reviewer model** — evaluates the draft against the 13 criteria independently.
+
+The Author writes Draft 1. The Reviewer scores it and returns critique.
+The Author revises based on the Reviewer's findings. Repeat until the
+Reviewer passes all 13 criteria or 2 rounds show no improvement.
+
+A more critical or less-aligned model makes a better Reviewer — it catches
+blind spots the Author model can't see. The Qwen 3.7 / DeepSeek V4 pairing
+proved this: the Reviewer found 12 issues the Author's self-review missed.
+See `references/limitations.md` for why this matters.
+
+If you can only use one model — the standard self-review cycle below still
+works. It's less effective but better than single-pass output.
+
 ## Creation process
 
 Each step shows which review criteria it targets — write WITH the benchmarks, not blind.
