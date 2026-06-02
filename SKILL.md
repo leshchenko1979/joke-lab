@@ -77,6 +77,47 @@ Each step shows which review criteria it targets — write WITH the benchmarks, 
 - ✅✅ excellent | ✅ good | ⚠️ needs work | ❌ problem
 - **PASS** = no ⚠️ or ❌ on any criterion.
 
+## Impact gate (relatability check)
+
+The 13 criteria measure **structure** — whether the joke is well-constructed.
+They do **not** measure impact — whether a human would actually react.
+
+A joke can pass all 13 criteria and still be dead. This is the novelty–empathy
+gap (see [references/research.md](references/research.md)): LLM reviewers
+prioritize novelty while humans prioritize empathy (Oogiri, 2025). The Reviewer
+must apply these checks BEFORE finalizing the pass.
+
+### 1. Relatability check
+
+Does this premise connect to a shared human experience anyone would recognize?
+Or does it require specific knowledge about AI training or this repo?
+
+**Ask:** "Would someone who doesn't care about AI or joke theory still find this
+funny? Or would they scroll past?"
+
+### 2. Baseline comparison
+
+Compare the current draft against Draft 1 (the safe-average default). Pairwise
+comparison is more reliable than absolute scoring (HumorRank, 2026).
+
+**Ask:** "Is this genuinely funnier than Draft 1, or did it just get structurally
+cleaner?"
+
+### 3. The nod vs laugh test
+
+**Ask:** "Would a human reading this acknowledge it's clever (nod), or would they
+actually smile or laugh?"
+
+If the answer is "nod," the joke has structure but no impact. The premise may be
+too abstract or too inside. Consider changing the premise entirely rather than
+polishing further.
+
+### When to use
+
+- **Multi-model execution:** the Reviewer applies these checks after scoring
+  the 13 criteria.
+- **Single-model execution:** the Author applies them during self-review.
+
 ## The cycle (mandatory)
 
 1. Write a draft

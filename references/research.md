@@ -147,6 +147,44 @@ away from its safe-average default toward the "narrow band" where humor lives.
 
 ---
 
+## 8. Evaluating humor: what the research says about scoring impact
+
+### 8.1 Pairwise comparison beats absolute scoring
+
+**HumorRank** (Talmor et al., 2026) evaluates joke quality through tournament-style pairwise comparisons. Instead of asking "rate this joke 1-5" (absolute scoring, which LLMs are bad at), it asks "which of these two is funnier?" — a relative judgment that LLMs perform more reliably. The system uses GTVH (General Theory of Verbal Humor) as its theoretical framework and achieves stronger alignment with human rankings than absolute scoring does.
+
+**Takeaway:** When reviewing, compare the current draft against Draft 1. Ask: "Is this genuinely funnier than the safe-average default, or did it just get structurally cleaner?" Relative judgment catches improvement better than absolute scoring.
+
+### 8.2 Multi-dimensional scoring: the novelty–empathy gap
+
+The **Oogiri** humor evaluation benchmark (Shi et al., 2025) scores jokes across 6 dimensions: Novelty, Clarity, Relevance, Intelligence, Empathy, Overall Funniness. Its key finding: **LLM evaluators prioritize Novelty while humans prioritize Empathy**.
+
+This means a joke that scores high on novelty (original structure, surprising twist) but low on empathy (relatable, emotionally resonant) will get a high score from an LLM reviewer and a low score from a human audience.
+
+**This is exactly what happened in this repo.** Draft D of Tweet 4 passed all 13 structural criteria (high novelty) but failed with a human reader (low empathy). The gap isn't a bug — it's a known, measured property of LLM evaluation across multiple studies.
+
+**Takeaway:** The 13 criteria measure structure well. What's missing is a separate Empathy/Relatability check: "Does this connect to a shared human experience anyone would recognize?" Without it, structurally perfect but emotionally flat jokes will pass.
+
+### 8.3 Crowd-based evaluation
+
+**Crowd Score** (Goes et al., 2022) evaluates through multiple LLM personas representing different humor types (affiliative, self-enhancing, aggressive, self-defeating). Each persona votes independently; the aggregated score correlates better with human judgments than a single evaluator. An auditing step validates that the rationale matches the score — mismatches are discarded.
+
+**Takeaway:** If the platform supports spawning multiple models, evaluate through several Reviewer personas. If only one Reviewer is available, vary the evaluation angle: first score structure (13 criteria), then score relatability (empathy check), then compare against baseline (pairwise).
+
+### 8.4 Calibration with examples
+
+**Kent (2024)** found that GPT-4's ability to judge humor improves significantly with many-shot prompting — concrete examples of jokes paired with human-provided scores. Zero-shot or criteria-only prompts produce weaker correlation with human judgments.
+
+**Takeaway:** The Reviewer benefits from seeing examples of what "🏆⬆" vs "❌" looks like in practice. Include 2-3 worked evaluations in the Reviewer prompt. This repo's `examples/` directory serves exactly that purpose.
+
+### 8.5 The structural–relatability gap
+
+Across all approaches — pairwise ranking, multi-dimensional scoring, crowd evaluation, many-shot calibration — the same pattern emerges: **LLMs can evaluate humor structure relatively well but cannot predict emotional response**. The gap between structure and impact is fundamental, not a prompt engineering issue.
+
+This methodology's 13 criteria measure structure. The **Impact Gate** (see [SKILL.md](../SKILL.md) and [methodology.md](methodology.md)) adds a separate relatability check that accounts for the novelty–empathy gap.
+
+---
+
 ## References
 
 | Year | Authors | Title |
@@ -162,6 +200,15 @@ away from its safe-average default toward the "narrow band" where humor lives.
 | 2025 | Murphy | *LLMs can't do humor* (wnmurphy.com) |
 | 2025 | Toplyn & Amir | *Can AI Make Us Laugh? Comparing Jokes by Witscript and a Human Expert* (ACL CHUM) |
 | 2025 | Yamakov et al. | *Towards Solving Humor: Why the Funniest AI Joke Will Not Be Funny* (ResearchGate) |
+| 2025 | Shi et al. | *Oogiri — Multi-Dimensional Humor Evaluation Reveals the Novelty–Empathy Gap in LLM Judgments* |
+| 2026 | Talmor et al. | *HumorRank: Tournament-Style Pairwise Evaluation of LLM-Generated Humor* |
+
+Other sources cited:
+
+| Year | Authors | Title |
+|------|---------|-------|
+| 2022 | Goes et al. | *Crowd Score: Multi-Persona Evaluation for Humor Generation* |
+| 2024 | Kent | *GPT-4 as a Humor Judge: Calibration Through Many-Shot Prompting* |
 
 ---
 

@@ -155,6 +155,52 @@ The real value of the review is the **iteration itself**. Any score showing
 improvement from Draft N−1 is more useful than a perfect score on Draft 1,
 because improvement proves the LLM deviated from its safe-average default.
 
+## Impact gate: measuring what the criteria miss
+
+The 13 criteria measure structural fitness: truthful premise, incongruity,
+benign violation, misdirection, surprise, punch word placement, conciseness,
+age-appropriateness, sharpness, unpredictable structure, edge, no explanation
+crutch, concrete and grounded details. They deliberately do **not** measure
+emotional impact — because emotional impact cannot be reliably scored by an
+LLM on an absolute scale (see [research.md](research.md) §8).
+
+### The novelty–empathy gap
+
+Research on multi-dimensional humor evaluation (Oogiri, Shi et al. 2025)
+found that **LLM evaluators prioritize Novelty while human evaluators
+prioritize Empathy**. A joke that scores high on novelty (original structure,
+surprising twist) but low on empathy (relatable, emotionally resonant) will
+get a high score from an LLM reviewer and a low score from a human audience.
+This is exactly what happened in this repo: Draft D of Tweet 4 passed all 13
+structural criteria but the user did not find it funny. The structure was
+sound; the impact was zero.
+
+### Three impact checks
+
+Add these after the structural review, before the final verdict:
+
+1. **Relatability check** — does the premise reference a shared human
+   experience recognizable to someone without insider knowledge?
+2. **Baseline comparison** — compared to Draft 1 (the safe-average default),
+   is this genuinely funnier or just structurally cleaner?
+3. **Nod vs laugh** — would a human reading this nod (acknowledge cleverness)
+   or actually react (smile/laugh)?
+
+### When to change the premise
+
+If a joke passes all 13 structural criteria but fails the impact gate
+(relatability check reveals it requires insider knowledge, or the nod vs
+laugh test returns "nod"), the premise itself is the problem. No amount of
+structural polishing will fix an abstract or insider premise. Change the
+observation entirely.
+
+### Why this isn't a 14th criterion
+
+Impact cannot be reliably scored on a ✅✅/✅/⚠️/❌ scale by the same type
+of model that wrote the joke. Adding it as a criterion would create a false
+sense of objectivity. Instead, it is a **gate** — a separate qualitative
+check that can overrule all 13 structural scores.
+
 ## Cycle rules
 
 ### When to stop
