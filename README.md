@@ -43,7 +43,7 @@ The agent reads [`SKILL.md`](SKILL.md) as the entry point (YAML frontmatter + in
 | *Tweet / "This tweet survived 4 drafts"* — meta-announcement that proves the repo works by being created with it | 3 |
 | *Tweet 2 / "This is draft 3"* — announcement using the research-enhanced methodology | 3 |
 | *Tweet 3 / "12 blind spots"* — skeptical review exposed the methodology's blind spots | 1 |
-| *Tweet 4 / "Funnier is a full-time job"* — first tweet using Author/Reviewer model separation | 1 |
+| *Tweet 4 / "Training it to be wrong"* — first tweet using Author/Reviewer model separation — went through 4 drafts guided by Reviewer feedback | 4 |
 
 Full logs: [`examples/`](https://github.com/leshchenko1979/joke-lab/tree/master/examples)
 
