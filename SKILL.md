@@ -32,6 +32,9 @@ Each step shows which review criteria it targets — write WITH the benchmarks, 
 
 1. **Find a specific, real observation** → targets: #1, #13
    Name concrete things. If you could describe it without ever experiencing life, it's too generic.
+   Verify causal links: if the premise involves two linked actions (e.g., replacing one
+   thing with another), the reader must understand why they're connected without needing
+   additional context.
 
 2. **List the boring assumptions** → targets: #2, #4
    Write out what the listener will expect after the setup.
@@ -55,14 +58,22 @@ Each step shows which review criteria it targets — write WITH the benchmarks, 
 
 ### Structural (1-9)
 
-1. **Truthful premise** — recognizable situation?
+1. **Truthful premise** — recognizable situation built from a specific, real observation.
+   Verify the causal links between elements are explicit — a reader should understand
+   why any two linked events are connected without needing outside context.
+   (See Causal link verification in Creation step 1.)
 2. **Incongruity** — gap between expectation and reality?
 3. **Benign violation** — harmless norm violation? Skip for abstract/tech setups.
 4. **Misdirection** — setup leads listener the wrong way?
 5. **Surprise** — genuinely unexpected twist?
 6. **Punch word at end** — punchline ends with the punch word?
 7. **Conciseness** — no extra words, no trailing explanation?
-8. **Age-appropriate** — target audience understands everything?
+8. **Age-appropriate (street test)** — the premise must be self-contained from the
+   first sentence for someone with zero prior knowledge of this topic. Apply noun
+   specificity: for every noun, ask "could this object, person, or service be named
+   more concretely?" If a reader would need to ask "which one?" to understand the
+   premise, the noun needs tightening. (For causal link verification, see
+   Criterion 1 and Creation step 1.)
 9. **Sharpness** — triggers a reaction, not just acknowledgment?
 
 ### Research-derived (10-13)
@@ -111,6 +122,16 @@ actually smile or laugh?"
 If the answer is "nod," the joke has structure but no impact. The premise may be
 too abstract or too inside. Consider changing the premise entirely rather than
 polishing further.
+
+### 4. Retellability check
+
+**Ask:** "Would someone who has never heard of this topic understand the premise
+from a single read-through?"
+
+Hand an imaginary reader the joke, walk away, come back and ask them what happened.
+If they can't retell the situation in their own words, the premise isn't
+self-contained. (For noun specificity, see Criterion 8. For causal link
+verification, see Creation step 1.)
 
 ### When to use
 
